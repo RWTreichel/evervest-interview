@@ -1,0 +1,13 @@
+<table class="table table-striped">
+  <caption class="h2">Fine Scotches</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <tr ng-repeat="scotch in scotch.scotches">
+    <td>{{scotch.name}}</td>
+    <td>${{scotch.price}}</td>
+  </tr>
+</table>

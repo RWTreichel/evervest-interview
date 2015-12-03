@@ -2,9 +2,11 @@
   'use strict';
 
   angular
-    .module('myApp', [
+    .module('app', [
       'ui.router',
       'ngAnimate',
-      'ui.bootstrap'
+      'ui.bootstrap',
+      'app.about'
     ]);
+
 })();
