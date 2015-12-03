@@ -1,1 +1,124 @@
-<h1>Scenario Comparisons {{comparisons.test}}</h1>
+<h1 ng-click="isCollapsed = !isCollapsed">
+  <span class="caret"></span>Scenario Comparisons
+</h1>
+
+<div uib-collapse="isCollapsed">
+  <div class="scenario-tab-nav row">
+    <ul>
+      <li class='col-md-2 selected-tab'><a href="#">Project Info</a></li>
+      <li class='col-md-2'><a href="#">Energy Production</a></li>
+      <li class='col-md-2'><a href="#">Capital Structure</a></li>
+      <li class='col-md-2'><a href="#">Asset Valuation</a></li>
+      <li class='col-md-2'><a href="#">Financing</a></li>
+      <li class='col-md-2'><a href="#">Sponsor Equity</a></li>
+    </ul>
+  </div>
+
+  <div class="scenario-dropdowns row" uib-dropdown>
+    <div class="col-md-3">
+      <!-- empty -->
+    </div>
+
+    <div class="col-md-3">
+      <button id="scenario-one" type="button" class="btn btn-primary" uib-dropdown-toggle>
+          Scenario 1 <span class="caret"></span>
+      </button>
+    </div>
+
+    <div class="col-md-3">
+      <button id="scenario-two"type="button" class="btn btn-primary" uib-dropdown-toggle>
+        Scenario 2 <span class="caret"></span>
+      </button>
+    </div>
+
+    <div class="col-md-3">
+      <button id="scenario-three" type="button" class="btn btn-primary" uib-dropdown-toggle>
+        Scenario 3 <span class="caret"></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <table class="scenario-data table">
+      <colgroup>
+        <col style="width: 25%;">
+        <col style="width: 25%; text-align: center;">
+        <col style="width: 25%; text-align: center;">
+        <col style="width: 25%; text-align: center;">
+      </colgroup>
+      <tr>
+        <th class="remove-border">Asset</th>
+        <td class="center-align"><span class="scenario-code a-code label">A-1</span>DATA</td>
+        <td class="center-align"><span class="scenario-code a-code label">A-1</span>DATA</td>
+        <td class="center-align"><span class="scenario-code a-code label">A-1</span>DATA</td>
+      </tr>
+      <tr>
+        <th class="remove-border">Capital Structure</th>
+        <td class="center-align"><span class="scenario-code c-code label">C-1</span>DATA</td>
+        <td class="center-align"><span class="scenario-code c-code label">C-2</span>DATA</td>
+        <td class="center-align"><span class="scenario-code c-code label">C-3</span>DATA</td>
+      </tr>
+      <tr>
+        <th class="remove-border">Stress Case</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align"><span class="scenario-code s-code label">S-1</span>DATA</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <table class="scenario-table table">
+      <colgroup>
+        <col style="width: 20%;">
+        <col style="width: 5%;">
+        <col style="width: 25%;">
+        <col style="width: 25%;">
+        <col style="width: 25%;">
+      </colgroup>
+      <caption>Project Info</caption>
+      <tr>
+        <th>MW Installed</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+      </tr>
+      <tr>
+        <th>WTGs</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+      </tr>
+      <tr>
+        <th>Turbines</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+      </tr>
+      <tr>
+        <th>Total CapEx</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+      </tr>
+      <tr>
+        <th>Initial Offtake</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+      </tr>
+      <tr>
+        <th>Closing Date</th>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+        <td class="center-align">DATA</td>
+      </tr>
+    </table>
+  </div>
+</div>
