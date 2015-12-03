@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <title>Evervest Interview Project</title>
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="lib/bootstrap-css-only/css/bootstrap.css">
 </head>
 <body>
-  <h1>{{'Hello' + ' World!'}}</h1>
+  <div ui-view></div>
+
   <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="lib/angular-animate/angular-animate.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="app/app.module.js"></script>
 </body>
 </html>
