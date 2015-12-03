@@ -2,16 +2,31 @@
 <html ng-app="myApp">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evervest Interview Project</title>
   <link rel="stylesheet" href="lib/bootstrap-css-only/css/bootstrap.css">
 </head>
 <body>
-  <div ui-view></div>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="about">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div ui-view></div>
+  </div>
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="lib/angular-animate/angular-animate.js"></script>
   <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
 </body>
 </html>
