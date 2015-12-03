@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="disney">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Evervest Interview Project</title>
   <link rel="stylesheet" href="lib/bootstrap-css-only/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="col-md-2">
+        <img src="assets/img/Disney-logo-vector.png" class="img-responsive">
+      </div>
+      <div class="col-md-8">
+        <nav ui-view="nav">
+        </nav>
+      </div>
+      <div class="col-md-2">
+        <input type="text">
+        <button>Go</button>
+      </div>
+    </div>
+  </header>
+
   <div class="container">
     <div ui-view></div>
   </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <hr>
+        </div>
+
+        <div class="col-md-2">
+          <img src="assets/img/disney-dot-com.jpg" class="img-responsive center-block">
+        </div>
+
+        <div class="col-md-5">
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="list-horizontal">
+          <li><a href="#"></a>Site Map |</li>
+          <li><a href="#"></a>FAQ/Help |</li>
+          <li><a href="#"></a>Your Account |</li>
+          <li><a href="#"></a>Guest Services</li>
+        </ul>
+        <ul class="list-horizontal">
+          <li><a href="#"></a>Privacy Policy/Your California Privacy Rights |</li>
+          <li><a href="#"></a>Terms of Use |</li>
+          <li><a href="#"></a>Internet Safety</li>
+        </ul>
+        <p style="text-align: center;">CDisney. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="lib/angular-animate/angular-animate.js"></script>
   <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="app/components/nav/nav.module.js"></script>
+  <script src="app/components/nav/nav.controller.js"></script>
+  <script src="app/disney.module.js"></script>
+  <script src="app/disney.config.js"></script>
+
 </body>
 </html>

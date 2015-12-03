@@ -1,0 +1,8 @@
+ul.list-horizontal {
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.list-horizontal li {
+  display: inline;
+}
